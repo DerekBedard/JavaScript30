@@ -4,5 +4,5 @@ Grab the course at [https://JavaScript30.com](https://JavaScript30.com)
 
 View live demos for all of the challenges I've completed so far:
 
-Day 01 - JavaScript Drum Kit https://youthful-jones-6b1107.netlify.com/
+Day 01 - JavaScript Drum Kit https://youthful-jones-6b1107.netlify.com/<br />
 Day 02 - JS and CSS Clock https://musing-williams-8013a0.netlify.com/
