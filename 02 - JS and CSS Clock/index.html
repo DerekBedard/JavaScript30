@@ -106,6 +106,15 @@
         allHands.forEach(hand => hand.style.transition = '')
       }
 
+      //the below code to play a clock tick sound whenever the second hand moves
+      //will not work in Chrome, test in Firefox or another browser. Chrome does not allow
+      //auto-playing audio before the user has interacted with the page
+      // if(secondsDegrees !== 1000) {
+      //   const audio = new Audio('clock-tick.mp3');
+      //   audio.currentTime = 0;
+      //   audio.play();
+      // }
+
     }
 
     setInterval(setDate, 1000);
