@@ -84,11 +84,11 @@
     function setDate() {
 
       const now = new Date();
-
       const seconds = now.getSeconds();
       const minutes = now.getMinutes();
       const hours = now.getHours();
-
+      const audio = new Audio('clock-tick.mp3');
+      const playPromise = audio.play();
       const secondsDegrees = ((seconds / 60) * 360) + 90;
       secondHand.style.transform = `rotate(${secondsDegrees}deg)`;
       const minutesDegrees = ((minutes / 60) * 360) + 90;
@@ -96,31 +96,19 @@
       const hoursDegrees = ((hours / 60) * 360) + 90;
       hourHand.style.transform = `rotate(${hoursDegrees}deg)`;
 
-      // console.log(secondsDegrees);
-      // console.log(minutes);
-      // console.log(hours);
-
       if(secondsDegrees === 90) {
         allHands.forEach(hand => hand.style.transition = 'none')
       } else {
         allHands.forEach(hand => hand.style.transition = '')
       }
 
-      //the below code to play a clock tick sound whenever the second-hand moves
-      //does not work in Chrome, Chrome will not allow auto-playing of audio before
-      //a user has interacted with the page. Please test sound in Firefox or another browser
-
-      if(secondsDegrees !== 1000) {
-        const audio = new Audio('clock-tick.mp3');
-        const playPromise = audio.play();
-        if (playPromise !== undefined) {
-          playPromise.then(_ => {
-            // Automatic playback started!
-          })
-          .catch(error => {
-            // Auto-play was prevented
-          });
-        }
+      if (playPromise !== undefined) {
+        playPromise.then(_ => {
+          // Automatic playback started!
+        })
+        .catch(error => {
+          // Auto-play was prevented
+        });
       }
 
     }
