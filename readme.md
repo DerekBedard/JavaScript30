@@ -6,5 +6,5 @@ View live demos for all of the challenges I've completed so far:
 
 Day 01 - JavaScript Drum Kit https://youthful-jones-6b1107.netlify.com/<br />
 Day 02 - JS and CSS Clock https://frosty-raman-9247d4.netlify.com/<br />
-(view Day 02 in Firefox or a non-Chrome browser to ensure sound effects will auto-play on page load)
+(view Day 02 in Firefox or a non-Chrome browser to ensure sound effects will auto-play on page load)<br />
 Day 03 - Update CSS Variables with JS https://optimistic-goldstine-acac23.netlify.com/<br />
