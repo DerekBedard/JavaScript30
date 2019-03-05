@@ -86,6 +86,7 @@
     //     return -1;
     //   }
     // });
+    // re-written using ternary operator
     const ageSort = inventors.sort((a, b) => a.year > b.year ? 1 : -1);
     console.log("Exercise 3. Sort the inventors by birthdate, oldest to youngest:");
     console.table(ageSort);
@@ -98,17 +99,26 @@
     console.log("Exercise 4. How many years did the inventors live collectively?");
     console.log(totalYears);
 
-    // 5. Sort the inventors by years lived
+    // Array.prototype.sort()
+    // 5. Sort the inventors by years lived (oldest first)
+    const oldest = inventors.sort((a, b) => {
+      const lastGuy = a.passed - a.year;
+      const nextGuy = b.passed - b.year;
+      return lastGuy > nextGuy ? -1 : 1;
+    });
+    console.log("Exercise 5. Sort the inventors by years lived (oldest first):");
+    console.table(oldest);
 
     // 6. create a list of Boulevards in Paris that contain 'de' anywhere in the name
     // https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
 
-
+    // Array.prototype.sort()
     // 7. sort Exercise
     // Sort the people alphabetically by last name
 
+    // Array.prototype.reduce()
     // 8. Reduce Exercise
-    // Sum up the instances of each of these
+    // Sum up the instances of each value in the data array
     const data = ['car', 'truck', 'bike', 'truck', 'bike', 'walk', 'car', 'van', 'truck', 'walk', 'car', 'van', 'car', 'car' ];
 
   </script>
