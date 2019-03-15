@@ -23,6 +23,14 @@ fetch(endpoint)
   .then(unformatted => unformatted.json())
   .then(data => cities.push(...data))
 
+function findMatches(wordToMatch, cities) {
+  return cities.filter(place => {
+    // g = "global", i = "insensitive" (as in not case-sensitive)
+    const regex = new RegExp(wordToMatch, 'gi');
+    return place.city.match(regex) || place.state.match(regex)
+  });
+}
+
 </script>
 </body>
 </html>
