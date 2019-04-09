@@ -12,3 +12,4 @@ Day 04 - Array Method Exercises (filter, map, sort, reduce) https://relaxed-lamp
 Day 05 - Flex Panel Gallery https://friendly-mcnulty-b57826.netlify.com/<br />
 Day 06 - Type Ahead Search using Fetch API https://quirky-franklin-326e87.netlify.com/<br />
 Day 07 - Array Method Exercises (some, every, find, findIndex, slice) https://eloquent-bartik-fd3616.netlify.com/<br />
+Day 08 - Fun with HTML5 Canvas https://dreamy-wiles-2ae8d6.netlify.com/<br />
