@@ -3,9 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <title>HTML5 Canvas</title>
+<style>
+  .header {
+    border-bottom: 1px solid black;
+    padding: 15px;
+    font-size: 20px;
+    background: linear-gradient(white, grey);
+  }
+</style>
 </head>
 <body>
-<canvas id="draw" width="800" height="800"></canvas>
+<div class="header">
+  <p>Click and drag mouse below to draw 🎨</p>
+</div>
+<canvas id="draw" width="800" height="800">
+</canvas>
 <script>
 
 const canvas = document.querySelector('#draw');
